@@ -1,7 +1,7 @@
-Template Naskah Skripsi LaTeX
+Template Naskah Master Thesis LaTeX
 =============================
 
-Template Naskah Skripsi dengan typesetting LaTeX untuk Departemen Teknik Elektro dan Teknologi Informasi (DTETI) Universitas Gadjah Mada. Template ini merupakan hasil modifikasi dari versi pak Pekik Nurwantoro (FMIPA UGM) dan mas Yohan (T Elektro UGM 2008).
+Template Naskah Thesis dengan typesetting LaTeX untuk Departemen Teknik Elektro dan Teknologi Informasi (DTETI) Universitas Gadjah Mada. Template ini merupakan modifikasi fork dari [Template Naskah Skripsi oleh Mas Guntur](https://github.com/gtrdp/template-skripsi), yang mana beliau sebut adalah hasil modifikasi dari versi pak Pekik Nurwantoro (FMIPA UGM) dan mas Yohan (T Elektro UGM 2008). Karena merupakan fork, sebagian penamaan masih menggunakan nama `Skripsi` (masih dalam tahap refactor ke naskah thesis secara utuh).
 
 Semoga bermanfaat. Anda sangat dibolehkan untuk turut berkontribusi dalam project ini dengan *Fork*, *Pull Request*, *Create New Issue*, atau turut menjadi kontributor repo ini.
 
@@ -9,7 +9,7 @@ Terimakasih.
 
 Download
 --------
-Silakan download versi terakhir di [https://github.com/gtrdp/template-skripsi/releases](https://github.com/gtrdp/template-skripsi/releases).
+Silakan download versi terakhir di [https://github.com/yasirroni/template-thesis/releases](https://github.com/yasirroni/template-thesis/releases) (fork dimulai sejak versi 1.1.2).
 
 Quick Start
 -----------
@@ -19,30 +19,31 @@ Quick Start
 	- [*Mac OS X*](https://www.google.com/search?q=windows+setup+latex&oq=windows+setup+latex&aqs=chrome..69i57.6207j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#q=mac+setup+latex)
 	- [Editor LaTeX di web](https://www.overleaf.com/) bisa dengan overleaf.com. Dengan ini kita tidak usah repot siapkan LaTeX environment.
 
-2. *Clone* repository ini dengan [Git](https://www.google.com/search?q=windows+setup+latex&oq=windows+setup+latex&aqs=chrome..69i57.6207j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#q=setup+git). Atau [unduh](https://github.com/gtrdp/template-skripsi/releases) repository ini (cara ini lebih mudah).
+2. *Clone* repository ini dengan [Git](https://www.google.com/search?q=windows+setup+latex&oq=windows+setup+latex&aqs=chrome..69i57.6207j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#q=setup+git) (cara ini memungkinkan anda untuk mendapatkan update dengan `git fetch upstream`). Atau [unduh](https://github.com/yasirroni/template-thesis/releases) repository ini (cara ini lebih mudah).
 3. Mulai tulis naskah anda, keterangan dari masing-masing file dalam template ini ada di bawah.
 4. Pertamakali pakai LaTeX? Butuh bantuan? Pergunakanlah Google dengan baik dan bijak. Saya bantu:
 	- [Bahasa Indonesia](https://www.google.com/search?q=tutorial+menggunakan+latex&oq=tutorial+menggunakan+latex&aqs=chrome..69i57j0.3219j0j7&sourceid=chrome&es_sm=91&ie=UTF-8)
 	- [English](https://www.google.com/search?q=latex+tutorial&oq=latex+tutorial&aqs=chrome..69i57j69i65l3j69i60l2.1884j0j7&sourceid=chrome&es_sm=91&ie=UTF-8)
-	- Atau kontak saya melalui email: [guntur.dharma@gmail.com](mailto:guntur.dharma@gmail.com)
 
 Contents
 --------
 Berikut penjelasan dari file-file utama dalam template ini. File lain yang tidak tercantum hanya pelengkap dalam repository ini.
 
-		template-skripsi/
-			├── gambar/
-			│	   ├── logougm.png
-			│	   └── wsn.png
-			├── bab1.tex
-			├── bab2.tex
-			├── bab3.tex
-			├── bab4.tex
-			├── bab5.tex
-			├── daftar-pustaka.bib
-			├── template-skripsi.pdf
-			├── template-skripsi.tex
-			└── jtetiskripsi.cls
+		template-thesis/
+			└── main/
+				├── bibtex/
+				│	└── daftar-pustaka.bib
+				├── images/
+				│	├── logougm.png
+				│	└── wsn.png
+				├── sections/
+				│	├── bab1.tex
+				│	├── bab2.tex
+				│	├── bab3.tex
+				│	├── bab4.tex
+				│	└── bab5.tex
+				├── jtetiskripsi.cls
+				└── template-skripsi.tex
 
 ### bab1.tex - bab5.tex
 Konten utama dari skripsi, mulai dari BAB I (pendahuluan) sampe BAB V (kesimpulan). Silakan disesuaikan dengan jumlah bab skripsi anda, hapus file yang tidak perlu atau tambahkan file baru untuk bab baru.
@@ -65,19 +66,9 @@ Jika anda ingin memodifikasi template skripsi ini, ubahlah file *jtetiskripsi.cl
 
 ### gambar/
 Masukkan gambar-gambar pada skripsi anda di folder ini. Gambar default: logougm.png (dipakai di cover) dan wsn.png (hanya dipakai di template awal, silakan dihapus jika tidak diperlukan).
-			
-Bonus
------
-Jika anda *clone* repository ini dengan [Git](https://www.google.com/search?q=windows+setup+latex&oq=windows+setup+latex&aqs=chrome..69i57.6207j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#q=setup+git), anda akan temukan tiga branch:
-	
-	- master
-	- perpus-pusat
-	- skripsi-guntur
-
-Branch master merupakan template skripsi, dengan isi yang sudah disesuaikan.
-
-Namun branch perpus-pusat dan skripsi-guntur adalah skripsi saya :D. Silakan baca-baca, semoga bermanfaat. Perpus-pusat adalah skripsi dengan tambahan lembar pernyataan dan lembar pengesahan asli, guna dikumpulkan di Perpus Pusat UGM.
 
 Lisensi
 -------
-Template sripsi ini dilisensikan dengan menggunakan [lisensi MIT](https://raw.githubusercontent.com/gtrdp/template-skripsi/master/LICENSE).
+Template sripsi ini dilisensikan dengan menggunakan [lisensi MIT](https://github.com/yasirroni/template-thesis/blob/master/LICENSE), melanjutkan [lisensi sebelumnya](https://github.com/gtrdp/template-skripsi/master/LICENSE).
+
+Silahkan buat sublisensi dengan [No License](https://choosealicense.com/no-permission/) jika dirasa orang lain tidak boleh menyalin, mendistribusikan, dan mengedit thesis anda yang ditulis menggunakan projek ini. Adapaun menghapus lisensi MIT pada dasarnya adalah tindakan ilegal, namun penambahan sublisensi pada lisensi MIT adalah legal, sebagaimana penjelasan di [sini](https://softwareengineering.stackexchange.com/a/386584). Adapun hasil compile dari program ini (file `.pdf`) tidak terikat dengan lisensi ini. Untuk mempelajari lebih lanjut tentang sublisensi, silahkan baca sumber [stackexchange](https://softwareengineering.stackexchange.com/questions/279171/can-the-author-of-an-mit-licensed-project-convert-it-to-a-commercial-licensed-on). Untuk memilih sublisensi lainnya, silahkan melihat [https://choosealicense.com/](https://choosealicense.com/)
