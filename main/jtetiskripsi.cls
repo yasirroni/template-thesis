@@ -252,7 +252,7 @@
       \MakeUppercase{\normalfont\bfseries Skripsi}\\
       \vspace{1.0cm}
        \vfill
-       \includegraphics[width=0.5\textwidth]{gambar/logougm.png}
+       \includegraphics[width=0.5\textwidth]{images/logougm.png}
        \vfill
        {\normalfont
         \bfseries Disusun oleh:\\
