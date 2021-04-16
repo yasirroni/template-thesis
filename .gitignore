@@ -1,3 +1,10 @@
+# Untuk pdf file
+*.pdf
+
+# Exclue sample pdf
+!main/example/template-skripsi.pdf
+
+# Untuk generated file
 *.acn
 *.acr
 *.alg
