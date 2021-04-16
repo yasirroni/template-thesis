@@ -26,10 +26,25 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+%-------------------------------------------------------------------------------
+% Disini dapat dipilih apa yang akan dikompilasi
+% - Tiap bab bisa dikomen agar kompilasi lebih ringan jika 
+%	dikehendaki
+% - Jika digunakan dengan bendar, LaTeX bisa melompati halaman 
+% 	dalam proses rendering
+%-------------------------------------------------------------------------------
+\includeonly{
+	sections/bab1,
+	sections/bab2,
+	sections/bab3,
+	sections/bab4,
+	sections/bab5
+}
 
-%-----------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
 % Disini awal masukan untuk data proposal skripsi
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \titleind{TEMPLATE SKRIPSI JTETI DENGAN MENGGUNAKAN \emph{TYPESETTING} \LaTeX}
 
 \fullname{GUNTUR D PUTRA}
@@ -52,9 +67,9 @@
 \secondsupervisor{Bimo Sunarfri Hantono, S.T., M.Eng.}
 \secondnip{1977 0131 2002 12 1 003}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini akhir masukan untuk data proposal skripsi
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \begin{document}
 
@@ -62,17 +77,17 @@
 
 \approvalpage
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini awal masukan Acknowledment
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \acknowledgment
 \begin{flushright}
 \emph{Untuk Ibu, Bapak,\\dan Adik-adikku tercinta.}
 \end{flushright}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini awal masukan untuk Prakata
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \preface
 Assalamu'alaikum Wr. Wb.
 
@@ -103,9 +118,9 @@ Wassalamu'alaikum Wr. Wb.
 &\textbf{Penulis}
 \end{tabular}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini akhir masukan untuk muka skripsi
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \tableofcontents
 \addcontentsline{toc}{chapter}{DAFTAR ISI}
 \listoftables
@@ -113,9 +128,9 @@ Wassalamu'alaikum Wr. Wb.
 \listoffigures
 \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Daftar Singkatan [Optional]
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \singkatan
 \noindent
 
@@ -211,9 +226,9 @@ WLAN & & Wireless Local Area Network\\
 WSN & & Wireless Sensor Network\\
 \end{tabular}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini awal masukan Intisari
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \begin{abstractind}
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -235,15 +250,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 \noindent
 \textbf{\emph{Keywords :}} \emph{wireless sensor network, Internet Protokol, WiFi, interoperability}.
 \end{abstracteng}
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini akhir masukan Intisari
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini awal masukan untuk Bab
-% - Tiap bab bisa dikomen agar kompilasi lebih ringan jika 
-%	dikehendaki
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \include{sections/bab1}
 
 \include{sections/bab2}
@@ -254,23 +267,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 \include{sections/bab5}
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini akhir masukan Bab
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini awal masukan untuk Daftar Pustaka
 % - Daftar pustaka diambil dari file .bib yang ada pada folder ini
 %   juga.
 % - Untuk memudahkan dalam memanajemen dan menggenerate file .bib
 %   gunakan reference manager seperti Mendeley, Zotero, EndNote,
 %   dll.
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \bibliography{IEEEabrv,bibtex/daftar-pustaka}
 \addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Disini akhir masukan Daftar Pustaka
-%-----------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \end{document}
