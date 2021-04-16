@@ -45,10 +45,10 @@ Berikut penjelasan dari file-file utama dalam template ini. File lain yang tidak
 				├── jtetiskripsi.cls
 				└── template-skripsi.tex
 
-### bab1.tex - bab5.tex
+### sections/bab1.tex - bab5.tex
 Konten utama dari skripsi, mulai dari BAB I (pendahuluan) sampe BAB V (kesimpulan). Silakan disesuaikan dengan jumlah bab skripsi anda, hapus file yang tidak perlu atau tambahkan file baru untuk bab baru.
 
-### daftar-pustaka.bib
+### bibtex/daftar-pustaka.bib
 File yang berisi daftar referensi-referensi yang anda gunakan dalam skripsi. File ini penting guna menyusun daftar pustaka anda. Dengan file ini menyusun daftar pustaka menjadi sangat sangat sangat mudah.
 
 File ini adalah hasil export dari aplikasi *reference management* seperti Mendeley, Zotero, EndNote, dll. Biasakan mengorganisir referensi skripsi anda menggunakan aplikasi *reference management*.
@@ -56,7 +56,7 @@ File ini adalah hasil export dari aplikasi *reference management* seperti Mendel
 ### template-skripsi.tex
 File ini template-skripsi.tex adalah file utama (kepala) dari template. Berisi informasi-informasi dasar, seperti judul skripsi, nama penulis, nama pembimbing, dll.
 
-### template-skripsi.pdf
+### template-skripsi.pdf (muncul setelah template-skripsi.tex dicompile)
 File ini adalah skripsi anda dalam bentuk matang. Sudah rapi dan dapat dicetak untuk dijilid. File ini di-*generate* secara otomatis menggunakan LaTeX.
 
 ### jtetiskripsi.cls
@@ -64,7 +64,7 @@ File yang berisi aturan-aturan format skripsi. Contoh, format cover, halaman pen
 
 Jika anda ingin memodifikasi template skripsi ini, ubahlah file *jtetiskripsi.cls*.
 
-### gambar/
+### images/
 Masukkan gambar-gambar pada skripsi anda di folder ini. Gambar default: logougm.png (dipakai di cover) dan wsn.png (hanya dipakai di template awal, silakan dihapus jika tidak diperlukan).
 
 Lisensi
