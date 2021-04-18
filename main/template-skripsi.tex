@@ -41,6 +41,17 @@
 	sections/bab5
 }
 
+%-------------------------------------------------------------------------------
+% Disini untuk membuat custom fungsi tambahan
+% - Fungsi \inputeq{} digunakan untuk memanggil equation
+%-------------------------------------------------------------------------------
+
+% \inputeq
+\newcommand{\inputeq}[2]{% #1 = file, #2 = eq name
+	\long\def\EQUATION ##1#2 {}%
+	\input{#1}
+}
+\let\ENDEQUATION\endinput
 
 %-------------------------------------------------------------------------------
 % Disini awal masukan untuk data proposal skripsi
