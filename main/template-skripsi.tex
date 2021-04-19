@@ -26,6 +26,13 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
+% Untuk mengutip persamaan dengan \inputeq
+\newcommand{\inputeq}[2]{% #1 = file, #2 = eq name
+	\long\def\EQUATION ##1#2 {}%
+	\input{#1}
+}
+\let\ENDEQUATION\endinput
+
 %-------------------------------------------------------------------------------
 % Disini dapat dipilih apa yang akan dikompilasi
 % - Tiap bab bisa dikomen agar kompilasi lebih ringan jika 
@@ -40,18 +47,6 @@
 	sections/bab4,
 	sections/bab5
 }
-
-%-------------------------------------------------------------------------------
-% Disini untuk membuat custom fungsi tambahan
-% - Fungsi \inputeq{} digunakan untuk memanggil equation
-%-------------------------------------------------------------------------------
-
-% \inputeq
-\newcommand{\inputeq}[2]{% #1 = file, #2 = eq name
-	\long\def\EQUATION ##1#2 {}%
-	\input{#1}
-}
-\let\ENDEQUATION\endinput
 
 %-------------------------------------------------------------------------------
 % Disini awal masukan untuk data proposal skripsi
