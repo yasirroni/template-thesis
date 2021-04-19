@@ -1,5 +1,10 @@
-Template Naskah Master Thesis LaTeX
+Template Naskah Master Thesis LaTeX (Not Maintained)
 =============================
+
+___
+
+I'M NO LONGER USE THIS TEMPLATE. FOR A BETTER MAINTAINED TEMPLATE, USE [thesisdtetiugm](https://github.com/yasirroni/thesisdtetiugm) TEMPLATE INSTEAD.
+___
 
 Template Naskah Thesis dengan typesetting LaTeX untuk Departemen Teknik Elektro dan Teknologi Informasi (DTETI) Universitas Gadjah Mada. Template ini merupakan modifikasi fork dari [Template Naskah Skripsi oleh Mas Guntur](https://github.com/gtrdp/template-skripsi), yang mana beliau sebut adalah hasil modifikasi dari versi pak Pekik Nurwantoro (FMIPA UGM) dan mas Yohan (T Elektro UGM 2008). Karena merupakan fork, sebagian penamaan masih menggunakan nama `Skripsi` (masih dalam tahap refactor ke naskah thesis secara utuh).
 
